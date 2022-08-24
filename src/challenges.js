@@ -22,8 +22,12 @@ function concatName(names) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  // eslint-disable-next-line no-unused-vars
+  let totalPoints = 0;
+  let totalPointsWins = wins * 3;
+  totalPoints = totalPointsWins + ties;
+  return totalPoints;
 }
 
 // Desafio 6
