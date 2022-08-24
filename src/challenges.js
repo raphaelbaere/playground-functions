@@ -31,13 +31,33 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+// eslint-disable-next-line sonarjs/cognitive-complexity
+function highestCount(numbers) {
+  let highestNumber = 0;
+  let highestCounter = 0;
+  for (let index1 in numbers) {
+    if (Math.abs(numbers[index1]) > highestNumber) {
+      highestNumber = numbers[index1];
+    }
+  }
+  for (let index2 in numbers) {
+    if (numbers[index2] === highestNumber) {
+      highestCounter += 1;
+    }
+  }
+  return highestCounter;
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let distanciaGato1 = mouse - cat1;
+  let distanciaGato2 = mouse - cat2;
+  if (Math.abs(distanciaGato2) > Math.abs(distanciaGato1)) {
+    return 'cat1';
+  } if (Math.abs(distanciaGato1) > Math.abs(distanciaGato2)) {
+    return 'cat2';
+  }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
