@@ -23,7 +23,6 @@ function concatName(names) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  // eslint-disable-next-line no-unused-vars
   let totalPoints = 0;
   let totalPointsWins = wins * 3;
   totalPoints = totalPointsWins + ties;
@@ -31,7 +30,7 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-// eslint-disable-next-line sonarjs/cognitive-complexity
+//
 function highestCount(numbers) {
   let highestNumber = 0;
   let highestCounter = 0;
